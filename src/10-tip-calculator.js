@@ -50,7 +50,6 @@ export function calculateTip(billAmount, serviceRating) {
 
   else if(serviceRating == 3){
     tipPercentage = 15;
-   
   }
 
   else if(serviceRating == 4){
@@ -64,6 +63,6 @@ export function calculateTip(billAmount, serviceRating) {
   }
 
   tipAmount = Math.round(billAmount * tipPercentage / 100 * 100) / 100;
-totalAmount = Math.round((billAmount + tipAmount) * 100) / 100;
+  totalAmount = Math.round((billAmount + tipAmount) * 100) / 100;
     return { tipPercentage, tipAmount, totalAmount }
 }
